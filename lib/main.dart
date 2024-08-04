@@ -27,33 +27,41 @@ class MyHomePage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('Item 1'),
-            subtitle: Text('This is the subtitle for item 1'),
+            leading: Container(color: Colors.amber,width: 50,height: 50,),
+            title: Text('Item 1',
+              textAlign: TextAlign.center,
+            ),
+            subtitle: Text('This is the subtitle for item 1',
+              textAlign: TextAlign.center,
+            ),
             onTap: () {
               // Handle tap
               print('Item 1 tapped');
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('Item 2'),
-            subtitle: Text('This is the subtitle for item 2'),
+            leading:Container(color: Colors.purpleAccent,width: 50,height: 50,),
+            title: Text('Item 2',
+              textAlign: TextAlign.center,
+            ),
+            subtitle: Text('This is the subtitle for item 2',
+              textAlign: TextAlign.center,
+            ),
             onTap: () {
               // Handle tap
               print('Item 2 tapped');
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('Item 3'),
-            subtitle: Text('This is the subtitle for item 3'),
+            leading: Container(color: Colors.blueAccent,width: 50,height: 50,),
+            title: Text('Item 3',textAlign: TextAlign.center,),
+            subtitle: Text('This is the subtitle for item 3',textAlign: TextAlign.center,),
             onTap: () {
-              // Handle tap
+             
               print('Item 3 tapped');
             },
           ),
-          // Add more ListTile widgets here
+          
         ],
       ),
     );
